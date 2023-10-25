@@ -1,0 +1,329 @@
+/* Variables */
+$color-principal: rgb(15, 15, 15);
+$color-secundario: rgb(119, 136, 153);
+$color-terciario: rgba(0, 0, 0, 0.37);
+
+/* Estilos generales */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+  }
+  
+  /* Header */
+  header {
+    background: url('./assets/img/1.jpg') no-repeat center center fixed;
+    background-size: cover;
+    color: white;
+    text-align: center;
+    position: relative;
+  }
+  
+  /* Navegación */
+  nav {
+    background-color: rgba(1, 155, 78, 0.61);
+  
+    ul {
+      list-style-type: none;
+      padding: 0;
+      text-align: center;
+  
+      li {
+        display: inline-block;
+        margin: 0 15px;
+        font-size: 1.5rem;
+  
+        a {
+          text-decoration: none;
+          color: rgb(255, 255, 255);
+  
+          &:hover {
+            text-decoration: underline;
+          }
+        }
+      }
+    }
+  }
+  
+  /* Contenido principal */
+  .titulo {
+    color: $color-principal;
+    margin: 20px;
+  }
+  
+  .subtitulo {
+    font-size: 25px;
+    font-style: italic;
+  }
+  
+  .img-fluid {
+    border-radius: 5px;
+    box-shadow: 1px 1px 5px $color-terciario;
+    border: 1px solid $color-secundario;
+    margin: 0 auto;
+    padding: 10px;
+  }
+  
+  .card {
+    background-color: $color-secundario;
+    width: 80%;
+    margin: 0 auto;
+    border-radius: 20px;
+    border: 5px solid rgb(40, 63, 1);
+    padding: 20px;
+    text-align: center;
+    box-shadow: 1px 1px 5px $color-principal;
+    margin-top: 200px;
+  }
+  
+  .card12 {
+    width: 80%;
+    margin: 0 auto;
+    border-radius: 5px;
+    border: 1px solid $color-secundario;
+    padding: 10px;
+    text-align: center;
+    box-shadow: 1px 1px 5px $color-terciario;
+    margin-bottom: 50px;
+  }
+  
+  .col-md-6 {
+    color: black;
+  }
+  
+  .descripcion {
+    text-align: justify;
+    margin-left: 75px;
+    margin-right: 75px;
+  }
+  
+  .banner2 {
+    background-color: darkolivegreen;
+    padding: 20px;
+    margin-top: 20px;
+  }
+  
+  .video {
+    width: 100%;
+  }
+  
+  .titulo__video {
+    font-size: 1.5rem;
+    margin-top: 20px;
+  }
+  
+  .descripcion__video {
+    font-size: 1rem;
+    padding-bottom: 25px;
+  }
+  
+  /* Pie de página */
+  footer {
+    text-align: center;
+    background-color: $color-secundario;
+    padding: 20px 0;
+  }
+
+
+  /* Nosotros */
+
+
+/* Estilo para la tarjeta (card) */
+.card__blanca {
+    background-color: #fff; /* Fondo blanco */
+    box-shadow: 0 4px 15px 0 $color-terciario; /* Sombra de la tarjeta */
+    border-radius: 5px; /* Borde redondeado de la tarjeta */
+    max-width: 500px; /* Ancho máximo de la tarjeta */
+    margin: 20px 425px; /* Centrar la tarjeta */
+    padding: 20px; /* Espaciado interno de la tarjeta */
+    border: 1px solid $color-principal;
+}
+
+.card__ubicacion .ubicacion1 {
+    width: 100%; 
+}
+
+.card__ubicacion .presentacion {
+    text-align: justify;
+}
+  .contact-card {
+    max-width: 400px;
+    margin-left: 500px;
+    padding: 20px;
+    background-color: #f7f7f7;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    margin-bottom: 15px;
+}
+
+.contact-card h2 {
+    color: #333;
+}
+
+.contact-card label {
+    display: block;
+    margin: 10px 0;
+    font-weight: bold;
+}
+
+.contact-card input[type="text"],
+.contact-card input[type="tel"],
+.contact-card input[type="number"],
+.contact-card select,
+.contact-card textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #ddd;
+    border-radius: 3px;
+}
+
+.contact-card input[type="submit"] {
+    background-color: #333;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 3px;
+    cursor: pointer;
+}
+
+.contact-card input[type="submit"]:hover {
+    background-color: #555;
+}
+
+
+.video-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr); 
+  gap: 20px;
+  max-width: 800px;
+  margin: 15px auto; 
+}
+
+.video-container {
+  border: 1px solid #ccc;
+  padding: 10px;
+  text-align: center;
+}
+
+video {
+  max-width: 100%;
+}
+
+.h2-preferential {
+  color: #333;
+  text-align: center;
+  margin-top: 15px;
+}
+
+
+.card {
+  max-width: 500px; 
+  margin: 20px auto; 
+  background-color: #fff; 
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2); 
+  border-radius: 5px; 
+  overflow: hidden;
+}
+
+.card video {
+  max-width: 100%;
+}
+
+
+
+  /* Media queries para dispositivos móviles */
+  @media (max-width: 768px) {
+    /* Encabezado */
+    header {
+      background-size: contain;
+    }
+  
+    /* Navegación */
+    nav {
+      display: flex;
+      justify-content: space-between;
+    }
+  
+    nav ul {
+      display: none;
+    }
+  
+    nav li {
+      display: block;
+      margin: 0;
+    }
+  
+    nav li a {
+      display: inline-block;
+      width: 100%;
+    }
+ /* Contenido principal */
+.titulo {
+    font-size: 100px;
+  }
+  
+  .subtitulo {
+    font-size: 1.5rem;
+  }
+  
+  .img-fluid {
+    width: 100%;
+    margin-bottom: 20px;
+  }
+  
+  .card,
+  .card12 {
+    width: 90%;
+    margin: 0 auto;
+    margin-bottom: 20px;
+  }
+  
+  .col-md-6 {
+    font-size: 1rem;
+  }
+  
+  .descripcion {
+    text-align: justify;
+    margin-left: 25px;
+    margin-right: 25px;
+  }
+  
+  .banner2 {
+    padding: 10px;
+    margin-top: 10px;
+  }
+  
+  .video {
+    width: 90%;
+  }
+  
+  .titulo__video {
+    font-size: 1.2rem;
+  }
+  
+  .descripcion__video {
+    font-size: 1rem;
+    padding-bottom: 15px;
+  }
+
+  .card__blanca{
+    margin: 15px auto;
+  }
+
+  .card__ubicacion .ubicacion1 {
+    width: 100%; 
+}
+  
+
+  .contact-card {
+  margin: 0 auto;
+  }
+  .video-grid{
+    grid-template-columns: repeat(1, 1fr);
+    max-width: 400px;
+  }
+  /* Pie de página */
+  footer {
+    font-size: 0.8rem;
+  }}

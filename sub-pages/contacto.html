@@ -2,10 +2,13 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
+    <link rel="icon" href="../assets/img/icono voila.jpg"> <div class="ico"> </div>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="../assets/styles/main.css">
+    <link rel="stylesheet" href="../assets/css/main.css">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
     <title>Voila Rio Cuarto</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+
 </head>
 <body>
     <nav class="navbar navbar-expand-lg navbar-light bg-light">
@@ -45,7 +48,50 @@
             </div>
         </div>
     </header>
+    <div class="contact-card">
+        <h2>Contacto</h2>
+        <p>Por favor, completa el siguiente formulario para ponerte en contacto con nosotros:</p>
 
+        <form action="procesar_formulario.php" method="POST">
+            <label for="nombre">Nombre y Apellido:</label>
+            <input type="text" id="nombre" name="nombre" required>
+
+            <label for="celular">Número de Celular:</label>
+            <input type="tel" id="celular" name="celular" required>
+
+            <label for="edad">Edad:</label>
+            <input type="number" id="edad" name="edad" required>
+
+            <label for="sexo">Sexo:</label>
+            <select id="sexo" name="sexo" required>
+                <option value="masculino">Masculino</option>
+                <option value="femenino">Femenino</option>
+                <option value="otro">Otro</option>
+            </select>
+
+            <label for="email">Correo Electrónico:</label>
+            <input type="email" id="email" name="email" required>
+
+            <label for="mensaje">Mensaje:</label>
+            <textarea id="mensaje" name="mensaje" rows="4" required></textarea>
+
+            <input type="submit" value="Enviar">
+        </form>
+    </div>
+
+
+    <!-- Pie de página -->
+    <footer class="bg-dark text-white">
+        <div class="container">
+            <h4 class="text-center">Creado por Tadeo</h4>
+        </div>
+            <a href="https://www.instagram.com/tuusuario" class="text-white mr-3" target="_blank"><i class="fab fa-instagram"></i> Instagram</a>
+            <a href="https://api.whatsapp.com/send?phone=TUNUMERO" class="text-white mr-3" target="_blank"><i class="fab fa-whatsapp"></i> WhatsApp</a>
+<a href="https://www.facebook.com/tupagina" class="text-white" target="_blank"><i class="fab fa-facebook"></i> Facebook</a>
+</div>
+    
+    </footer>
+    
 
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.3/dist/umd/popper.min.js"></script>
